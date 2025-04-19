@@ -1,0 +1,26 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        GameEngine.run();
+
+    }
+
+}
+
+/*
+
+Plans for the future:
+-login program with username and password
+--saving stats, writing into a statsFile.txt or something
+
+-achievements
+--System.out.println("\033[0;31mHello World!"); - colored output - https://www.youtube.com/shorts/LV3SgHfO0_w
+ */
+
+/*
+-bugs-
+
+-infinite healing
+well that was an easy fix, just had to edit the line of "contains()" to "get()" and check if it's above 0
+ */
