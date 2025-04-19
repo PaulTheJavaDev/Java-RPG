@@ -14,6 +14,11 @@ public class GameEngine {
 
     static Random random = new Random();
 
+    public static void main(String[] args) {
+        System.out.println();
+        GameEngine.run();
+    }
+
     public static void run() {
         System.out.printf("Welcome to my first self-written Game Engine in Java in %s!\n"
                 , Runtime.version().feature());
@@ -44,12 +49,12 @@ public class GameEngine {
             }
         }
 
-        System.out.println("Username accepted!\n");
+        System.out.println("Username accepted!");
     }
 
     //validate Character class
     private static void askForCharacterClass() {
-        System.out.println("Now you need to choose a CharacterClass ");
+        System.out.println("\nChoose one of the given Classes: ");
         boolean isActualClass = false;
 
         while (!isActualClass) {
@@ -65,8 +70,6 @@ public class GameEngine {
                 }
             }
             System.out.println();
-
-            System.out.println("\nChoose one of the given Classes: ");
             String input = scanner.next();
 
             for (CharacterClass cl : CharacterClass.values()) {
